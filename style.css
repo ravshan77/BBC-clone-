@@ -1,0 +1,450 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+}
+
+.header nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.header nav ul li a {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.header nav ul li .nav_hover_div {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header nav ul li:nth-child(1) {
+  min-width: 100px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: none;
+  position: relative;
+}
+
+.header nav ul li:nth-child(1) a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.header nav ul li:nth-child(1) a h2 {
+  width: 26px;
+  height: 28px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-family: ReithSans, Arial, Helvetica freesans, sans-serif;
+}
+
+.header nav ul li:nth-child(2) {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header nav ul li:nth-child(2):hover .nav_hover_div {
+  background-color: #0000ff;
+}
+
+.header nav ul li:nth-child(2) a {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+  width: 110px;
+}
+
+.header nav ul li:nth-child(2) a img {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  /* more togle off */
+  opacity: 1;
+
+  /* more togle on */
+  /* opacity: 0; */
+}
+
+.header nav ul li:nth-child(4):hover .nav_hover_div {
+  background-color: red;
+}
+
+.header nav ul li:nth-child(5):hover .nav_hover_div {
+  background-color: yellow;
+}
+
+.header nav ul li:nth-child(6):hover .nav_hover_div {
+  background-color: #6e95eb;
+}
+
+.header nav ul li:nth-child(7):hover .nav_hover_div {
+  background-color: #0000ff;
+}
+
+.header nav ul li:nth-child(8):hover .nav_hover_div {
+  background-color: green;
+}
+
+.header nav ul li:nth-child(9):hover .nav_hover_div {
+  background-color: #020263;
+}
+
+.header nav ul li:nth-child(10):hover .nav_hover_div {
+  background-color: #800080;
+}
+
+.header nav ul li:nth-child(11):hover .nav_hover_div {
+  background-color: white;
+}
+
+.header nav ul li:nth-child(11) .nav_hover_div {
+  /* more togle bottom div bg-black  */
+  /* background-color: black; */
+}
+
+.header nav ul li:nth-child(11) {
+  min-width: 120px;
+}
+
+.header nav ul li:nth-child(11) a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.header nav ul li:nth-child(12) {
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  max-width: 190px;
+  display: flex;
+  justify-content: center;
+  color: #333;
+  align-items: center;
+  position: relative;
+  /* more togle off input bg-color */
+  /* background-color: white; */
+
+  /* more togle on input bg-color */
+  background-color: #ccc;
+}
+
+.header nav ul li:nth-child(12) input {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  padding-left: 5px;
+  font-size: 14px;
+  color: black;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* more togle off input bg-color */
+  /* background-color: white; */
+
+  /* more togle on input bg-color */
+  background-color: #ccc;
+}
+
+.header nav ul li:nth-child(12) i {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+/* 
+1) header bg-white
+2) bbc h2 bg-black
+3) sigin icon yuqoladi
+4) more tag chiziq add clas bg-black
+5) search input va icon bg-#ccc
+6) pastki navbar div on
+*/
+
+
+
+/*  bottom_header  */
+
+.bottom_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.bottom_header ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bottom_header ul li {
+  width: 190px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.bottom_header ul li:nth-child(1) h1 {
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bottom_header ul li a {
+  width: 160px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding-left: 8px;
+}
+
+.bottom_header ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+
+  .header nav {
+    width: 90%;
+  }
+}
+
+.bottom_header ul li:nth-child(8) {
+  display: none;
+}
+.bottom_header ul li:nth-child(7) {
+  display: none;
+}
+.bottom_header ul li:nth-child(6) {
+  display: none;
+}
+.bottom_header ul li:nth-child(5) {
+  display: none;
+}
+.bottom_header ul li:nth-child(4) {
+  display: none;
+}
+.bottom_header ul li:nth-child(3) {
+  display: none;
+}
+
+.bottom_header ul li:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (max-width: 1544px) {
+  .bottom_header ul li:nth-child(8) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(10) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .bottom_header ul li:nth-child(7) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(9) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1336px) {
+  .bottom_header ul li:nth-child(6) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(8) {
+    display: none;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header nav {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .header nav ul li:nth-child(2) {
+    width: 100px;
+  }
+
+  .header nav ul li:nth-child(2) a img {
+    display: none;
+  }
+
+  .header nav ul li:nth-child(2) a {
+    margin-right: 0;
+    width: 50px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header nav {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .bottom_header ul {
+    justify-content: space-between;
+  }
+
+  .header nav ul li:nth-child(2) {
+    width: 40px;
+    opacity: 0;
+  }
+
+  .bottom_header ul li:nth-child(5) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(7) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 807px) {
+  .bottom_header ul li:nth-child(4) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(6) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 773px) {
+  .bottom_header ul li:nth-child(3) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(5) {
+    display: none;
+  }
+  .header nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  .bottom_header ul li:nth-child(2) {
+    display: flex;
+  }
+  .header nav ul li:nth-child(4) {
+    display: none;
+  }
+
+  .bottom_header ul li {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header nav ul li:nth-child(12) {
+    height: 100%;
+    max-width: 8%;
+    margin: 0px;
+  }
+
+  .header nav ul li:nth-child(12) input {
+    display: none;
+  }
+
+  .header nav ul li:nth-child(12) i {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
+  .bottom_header ul li {
+    width: 140px;
+  }
+
+  .bottom_header ul li a {
+    width: 90%;
+  }
+}
