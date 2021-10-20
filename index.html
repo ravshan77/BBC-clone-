@@ -15,11 +15,11 @@
 
     
 
-      <header class="header bg-white">
+      <header class="header bg-black" id="header">
           <nav>
               <ul class="ul">
-                  <li  role="logo"><a><h2 class="bg-black ">B</h2><h2 class="bg-black ">B</h2><h2 class="bg-black ">C</h2></a></li>
-                  <li  role="sign"><a><img src="./assets/user icon.png" />   Sign in</a><div class="nav_hover_div"></div></li>
+                  <li  role="logo"><a><h2 class="bg-white" id="logo_bbc">B</h2> <h2 class="bg-white" id="logo_bbc">B</h2><h2 class="bg-white" id="logo_bbc">C</h2> </a></li>
+                  <li  role="sign"><a><img id="sign_icon" src="./assets/user icon.png" />   Sign in</a><div class="nav_hover_div"></div></li>
                   <li ><a>Home</a> <div></div></li>
                   <li ><a>News</a> <div class="nav_hover_div"></div></li>
                   <li ><a>Sport</a><div class="nav_hover_div"></div></li>
@@ -28,12 +28,12 @@
                   <li ><a>Travel</a><div class="nav_hover_div"></div></li>
                   <li ><a>Future</a><div class="nav_hover_div"></div></li>
                   <li ><a>Calture</a><div class="nav_hover_div"></div></li>
-                  <li onclick="moreToggle()"><a>More <i class="fas fa-caret-down"></i></a><div class="nav_hover_div bg-black"></div></li>
-                  <li > <input type="text" placeholder="Search"/><i class="fas fa-search"></i> </li>
+                  <li id="moreToggle"><a>More <i class="fas fa-caret-down"></i></a><div class="nav_hover_div bg-black"></div></li>
+                  <li id="search_bg" class=""> <input class="bg-white" id="search_bg_input" type="text" placeholder="Search"/><i class="fas fa-search bg-search-i-white" id="bg-search-i"></i> </li>
               </ul>
           </nav>
-        </header>
-        <div class="bottom_header">
+      </header>
+      <div class="bottom_header" id="bottom_headers">
             <ul class="container">
                 <li><h1>More</h1></li>
                 <li><a>News</a> </li>
@@ -48,8 +48,72 @@
                 <li><a>Weather</a></li>
                 <li><a>Sounds</a></li>
             </ul> 
-        </div>
-        
+      </div>
+
+        <section class="">
+            <div class="container main-text">
+                <h2>Welcome to BBC.com</h2>
+                <h2>Tuesday, 19 October</h2>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container main-block">
+                <div class="top-block">
+                    <article>
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore pariatur minus dolore.</p>
+                        <span >EUROPE</span>
+                    </article>
+                </div>
+                <div class="bottom-block">
+                    <div>
+                      <div>
+                          <article>
+                            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                            <span>EXPLAINERS</span>
+                          </article>  
+                     </div>
+                      <div>
+                          <article>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <span>MIDDLE EAST</span>
+                          </article>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                          <article>
+                              <h2>Lorem ipsum dolor sit amet adipisicing.</h2>
+                              <span>CULTURE</span>
+                          </article>
+                            </div>
+                      <div>
+                          <article>
+                            <h2>Ipsum dolor sit amet consectetur.</h2>
+                            <span>WORKLIFE</span>
+                          </article>  
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, hic cupiditate. Molestias autem aliquam maiores itaque pariatur ut esse. Quos nisi quo ea? Deserunt officiis nihil quod aperiam enim, iste quia provident accusantium neque voluptate odit reprehenderit rerum? Ullam dolore voluptas cum iste repellat nesciunt quae accusantium est, excepturi blanditiis enim eos! Atque laboriosam expedita facilis rem nostrum iste perferendis deleniti, saepe impedit recusandae molestiae dolorem modi delectus quia soluta quasi sequi. Velit expedita quidem tenetur explicabo deleniti magni et rerum id dicta ab, praesentium cumque, ea odit, quas magnam iste nihil ut ratione non quod! Nulla nemo nostrum tempore aspernatur saepe. Nobis maiores libero provident fugit corporis, eveniet beatae officia inventore sunt at! Ratione tempore vero, id optio iure, excepturi natus officiis qui facilis enim fugit illo at repellat culpa cum. Aperiam sed iure ad rerum eius necessitatibus exercitationem sint quisquam, quas earum optio eum sapiente laudantium harum reiciendis labore quos repudiandae velit voluptatem cupiditate quae! Soluta inventore architecto ut blanditiis quaerat. Perferendis sequi nostrum impedit adipisci illum quidem ad doloribus neque explicabo, officia praesentium commodi ipsum asperiores, unde assumenda enim. Facere nisi officiis dolore delectus praesentium doloribus aspernatur consequatur eligendi. Beatae quisquam repudiandae tempora eum voluptas voluptatum magnam?</h1>
+
 
 
 <!-- 
@@ -67,9 +131,6 @@
 
 
 
-        <section>
-            A group of related content
-        </section>
 
 
         <aside>

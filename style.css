@@ -13,16 +13,23 @@
 .bg-black {
   background-color: black;
   color: white;
+  transition: all 0.2s;
 }
 
 .bg-white {
   background-color: white;
   color: black;
+  transition: all 0.2s;
+}
+
+.bg-ccc {
+  background-color: #ccc;
 }
 
 .header {
   width: 100%;
   border: 1px solid #ccc;
+  transition: all 0.2s;
 }
 
 .header nav {
@@ -52,6 +59,7 @@
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
+  z-index: 99;
 }
 
 .header nav ul li a {
@@ -120,11 +128,12 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  /* more togle off */
-  opacity: 1;
+  transition: all 0.4s;
+}
 
-  /* more togle on */
-  /* opacity: 0; */
+.opacity {
+  opacity: 0;
+  transition: all 0.4s;
 }
 
 .header nav ul li:nth-child(4):hover .nav_hover_div {
@@ -159,11 +168,6 @@
   background-color: white;
 }
 
-.header nav ul li:nth-child(11) .nav_hover_div {
-  /* more togle bottom div bg-black  */
-  /* background-color: black; */
-}
-
 .header nav ul li:nth-child(11) {
   min-width: 120px;
 }
@@ -185,10 +189,9 @@
   color: #333;
   align-items: center;
   position: relative;
-  /* more togle off input bg-color */
-  /* background-color: white; */
+}
 
-  /* more togle on input bg-color */
+.bg-ccc {
   background-color: #ccc;
 }
 
@@ -204,11 +207,6 @@
   font-size: 14px;
   color: black;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  /* more togle off input bg-color */
-  /* background-color: white; */
-
-  /* more togle on input bg-color */
-  background-color: #ccc;
 }
 
 .header nav ul li:nth-child(12) i {
@@ -219,24 +217,24 @@
   padding-top: 4px;
 }
 
-/* 
-1) header bg-white
-2) bbc h2 bg-black
-3) sigin icon yuqoladi
-4) more tag chiziq add clas bg-black
-5) search input va icon bg-#ccc
-6) pastki navbar div on
-*/
-
-
-
 /*  bottom_header  */
 
 .bottom_header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
   border: 1px solid #ccc;
+  width: 100%;
+  height: 0;
+  transition: all 0.4ght 0.3s;
+  overflow: hidden;
+}
+
+.mystyle {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4ght 0.3s;
 }
 
 .bottom_header ul {
@@ -447,4 +445,356 @@
   .bottom_header ul li a {
     width: 90%;
   }
+  .bg-ccc {
+    background-color: white;
+  }
+
+  .bg-search-i-white {
+    color: white;
+  }
+
+  .bg-search-i-black {
+    color: black;
+  }
 }
+
+/* Main sections */
+
+section {
+  margin: 10px auto;
+}
+
+.main-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+.main-text h2:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.55rem;
+  background-color: #0000;
+}
+
+.main-text h2:nth-child(2) {
+  transition: opacity, 0.5s;
+  color: #8c8c8c;
+  text-align: right;
+  font-weight: normal;
+  font-size: 1.55rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  .main-text {
+    margin-top: 0;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-text {
+    display: none;
+  }
+}
+
+.main-block {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.main-block .top-block {
+  width: 100%;
+  height: 50vh;
+  background: cover center no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0143/production/_121132300_071217442-1.jpg");
+  position: relative;
+  cursor: pointer;
+}
+
+.main-block .top-block:hover {
+  opacity: 0.95;
+  backface-visibility: hidden;
+}
+
+.main-block .top-block article {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+}
+
+.main-block .top-block article h1 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  font-weight: 500;
+}
+
+.main-block .top-block article p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  font-weight: 500;
+  padding: 15px 0;
+  color: #d3d3d3;
+}
+
+.main-block .top-block article span {
+  font-size: 17px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding-left: 10px;
+  color: #d3d3d3;
+}
+
+.main-block .top-block article span::before {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 90%;
+  left: 0px;
+  background-color: red;
+}
+
+.main-block .bottom-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-block .bottom-block div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-block div:nth-child(1) {
+  padding-left: 15px;
+}
+
+.bottom-block div:nth-child(2) {
+  padding-left: 15px;
+}
+
+.main-block .bottom-block div div {
+  width: 100%;
+  height: 24vh;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0143/production/_121132300_071217442-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  cursor: pointer;
+}
+
+.main-block .bottom-block div div:hover {
+  opacity: 0.95;
+  backface-visibility: hidden;
+}
+
+.main-block .bottom-block div div:nth-child(2) {
+  margin-top: 15px;
+}
+
+.main-block .bottom-block div div article {
+  position: absolute;
+  bottom: 0;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  padding-bottom: 10px;
+}
+
+.main-block .bottom-block div div article h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.main-block .bottom-block div div article span {
+  padding-left: 10px;
+  position: relative;
+  color: #d3d3d3;
+}
+
+.main-block .bottom-block div div article span::before {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  left: 0px;
+}
+
+.main-block
+  .bottom-block
+  div:nth-child(1)
+  div:nth-child(1)
+  article
+  span::before {
+  background-color: red;
+}
+.main-block
+  .bottom-block
+  div:nth-child(1)
+  div:nth-child(2)
+  article
+  span::before {
+  background-color: yellow;
+}
+.main-block
+  .bottom-block
+  div:nth-child(2)
+  div:nth-child(1)
+  article
+  span::before {
+  background-color: green;
+}
+.main-block
+  .bottom-block
+  div:nth-child(2)
+  div:nth-child(2)
+  article
+  span::before {
+  background-color: #47a1d8;
+}
+
+.main-block .bottom-block div:nth-child(1) div:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/8B30/production/_121123653_gettyimages-1172702537.jpg");
+}
+.main-block .bottom-block div:nth-child(1) div:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/3137/production/_121099521_ee9a6aef-1dc2-4216-b24e-b08d7100e83a.jpg");
+}
+.main-block .bottom-block div:nth-child(2) div:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/DD67/production/_121097665_b8660980-dc95-4e87-8786-691060c57306.jpg");
+}
+.main-block .bottom-block div:nth-child(2) div:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/DC3F/production/_121138365_mediaitem121137729.jpg");
+}
+
+@media only screen and (max-width: 1005px) {
+  .main-text h2 {
+    font-size: 1.05rem;
+  }
+
+  .main-block {
+    flex-direction: column;
+  }
+
+  .main-block .top-block {
+    height: 60vh;
+  }
+  .bottom-block div:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .bottom-block div:nth-child(1) div:nth-child(1) {
+    margin-top: 15px;
+  }
+
+  .bottom-block div:nth-child(2) div:nth-child(1) {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-block .top-block {
+    height: 30vh;
+  }
+
+  .main-block .top-block article p {
+    display: none;
+  }
+
+  .main-block .top-block article h1 {
+    font: size 16px;
+    margin-bottom: 10px;
+  }
+
+  .main-block .top-block article span {
+    font-size: 14px;
+  }
+
+  .main-block .bottom-block {
+    width: 100%;
+    display: block;
+  }
+
+  .bottom-block div:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .bottom-block div:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .main-block .bottom-block div div {
+    height: 8vh;
+    border-bottom: 1px solid #ccc;
+    color: black;
+  }
+
+  .main-block .bottom-block div:nth-child(1) div:nth-child(1) {
+    background: none;
+  }
+  .main-block .bottom-block div:nth-child(1) div:nth-child(2) {
+    background: none;
+  }
+  .main-block .bottom-block div:nth-child(2) div:nth-child(1) {
+    background: none;
+  }
+  .main-block .bottom-block div:nth-child(2) div:nth-child(2) {
+    background: none;
+  }
+
+  .main-block .bottom-block div div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5px 0px;
+    overflow: hidden;
+  }
+
+  .main-block .bottom-block div div article h2 {
+    font-size: 1rem;
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+  }
+
+  .main-block .bottom-block div div article span {
+    font-size: 0.75rem;
+    color: #767676;
+  }
+}
+
