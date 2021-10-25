@@ -1,0 +1,361 @@
+.b {
+  border: 1px solid red;
+}
+
+.r {
+  border: 1px solid blue;
+}
+.posts-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.posts-block .content {
+  width: 70%;
+}
+
+.posts-block .bbb {
+  width: 30%;
+  background-color: #f6f6f6;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.content section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.content section .card {
+  width: 32%;
+  margin-right: 2%;
+  height: 350px;
+  position: relative;
+}
+
+.content section .card div {
+  height: 160px;
+  width: 100%;
+}
+
+.content section .card h3 {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  color: #212121;
+  font-size: 20px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+}
+
+.content section .card p {
+  height: 30%;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.content section .card h4 {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+}
+
+.content section .card h4::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  transform: translateY(-15%);
+  left: 0px;
+}
+
+.News1 {
+  color: #4a4a4a;
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  padding-left: 12px;
+}
+
+.News1::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 22px;
+  transform: translateY(19%);
+  left: 0px;
+  background-color: red;
+}
+
+.Sport {
+  color: #4a4a4a;
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  padding-left: 12px;
+}
+
+.Sport::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 22px;
+  transform: translateY(19%);
+  left: 0px;
+  background-color: red;
+}
+
+.Weather-text {
+  color: #4a4a4a;
+  display: inline-block;
+  font-size: 1.65rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+/* weather button */
+
+.Weather-text a{
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  background: #f2f2f2;
+  font-size: .625rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #8c8c8c;
+  margin-left: 1rem;
+  float: left;
+  position: relative;
+  top: 50%;
+}
+
+.News2 {
+  display: none;
+}
+
+.bbb .bb div h3 {
+  background-color: transparent;
+  background-image: none;
+  color: #505050 !important;
+  font: bold 12px/12px helvetica, arial, sans-serif !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 5px !important;
+  /* margin-top: 8px !important; */
+  padding-top: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: right;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.bb div div {
+  width: 100%;
+  height: 100%;
+}
+
+.bbb .bb div div {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8eq7xg9acNC6Z8xzcJEfCzpnCbpFeqT1oKA&usqp=CAU");
+  width: 275px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .News1 {
+    display: none;
+  }
+  .News2 {
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 1.75rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+    padding-left: 12px;
+  }
+
+  .News2::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 22px;
+    transform: translateY(19%);
+    left: 0px;
+    background-color: red;
+  }
+
+  .posts-block {
+    flex-direction: column-reverse;
+    justify-content: baseline;
+  }
+  .posts-block div:nth-child(1) {
+    width: 100%;
+    display: block;
+  }
+
+  .content section .card {
+    width: 100%;
+  }
+
+  .content section .card:nth-child(3) {
+    margin-right: 0%;
+  }
+
+  main .posts-block .bbb {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .bbb .bb {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-column: span;
+    text-align: center;
+    height: 300px;
+    position: relative;
+  }
+
+  .bbb .bb div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+    width: 300px;
+    display: block;
+  }
+}
+
+.content section .card:nth-child(1) h4::before {
+  background-color: red;
+}
+
+.content section .card:nth-child(2) h4::before {
+  background-color: orange;
+}
+
+.content section .card:nth-child(3) h4::before {
+  background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .content section .card h4::before {
+    height: 80%;
+  }
+  .content section .card div {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .content section .card {
+    height: 10vh;
+    color: black;
+    margin-top: 0px;
+  }
+
+  .content section .card h3 {
+    font-size: 1rem;
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+    height: 50%;
+  }
+
+  .content section .card p {
+    display: none;
+  }
+
+  .content section .card h4 {
+    position: unset;
+    height: auto;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 0.75rem;
+    color: #767676;
+    padding-left: 10px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  .content section .card div {
+    height: 140px;
+    width: 100%;
+  }
+}
+
+.content section .card div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Weathers {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.Weathers ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.Weathers ul li {
+  display: flex;
+  list-style: none;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  text-transform: uppercase;
+  width: 110px;
+}
+
+.Weathers ul li span {
+  font-size: 14px;
+  color: #212121;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Weathers ul li p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Weathers ul li .night{
+  font-size: 14px;
+  font-weight: 300;
+}

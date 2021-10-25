@@ -519,6 +519,7 @@ section {
     url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0143/production/_121132300_071217442-1.jpg");
   position: relative;
   cursor: pointer;
+
 }
 
 .main-block .top-block:hover {
@@ -630,10 +631,10 @@ section {
 }
 
 .main-block .bottom-block div div article span::before {
-  content: " ";
+  content: "";
   position: absolute;
   width: 4px;
-  height: 15px;
+  height: 90%;
   left: 0px;
 }
 
@@ -685,6 +686,7 @@ section {
       rgb(54, 53, 53)
     ),
     url("https://ichef.bbci.co.uk/news/976/cpsprodpb/3137/production/_121099521_ee9a6aef-1dc2-4216-b24e-b08d7100e83a.jpg");
+
 }
 .main-block .bottom-block div:nth-child(2) div:nth-child(1) {
   background-image: linear-gradient(
@@ -693,6 +695,7 @@ section {
       rgb(54, 53, 53)
     ),
     url("https://ichef.bbci.co.uk/news/976/cpsprodpb/DD67/production/_121097665_b8660980-dc95-4e87-8786-691060c57306.jpg");
+
 }
 .main-block .bottom-block div:nth-child(2) div:nth-child(2) {
   background-image: linear-gradient(
@@ -704,6 +707,7 @@ section {
 }
 
 @media only screen and (max-width: 1005px) {
+  
   .main-text h2 {
     font-size: 1.05rem;
   }
@@ -721,14 +725,20 @@ section {
 
   .bottom-block div:nth-child(1) div:nth-child(1) {
     margin-top: 15px;
+    padding-left: 15px;
   }
 
   .bottom-block div:nth-child(2) div:nth-child(1) {
     margin-top: 15px;
+    padding-left: 15px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .main-block .top-block article span::before {
+    transform: translateY(10%);
+  }
+
   .main-block .top-block {
     height: 30vh;
   }
@@ -767,12 +777,14 @@ section {
 
   .main-block .bottom-block div:nth-child(1) div:nth-child(1) {
     background: none;
+    padding-left: 0;
   }
   .main-block .bottom-block div:nth-child(1) div:nth-child(2) {
     background: none;
   }
   .main-block .bottom-block div:nth-child(2) div:nth-child(1) {
     background: none;
+    padding-left: 0;
   }
   .main-block .bottom-block div:nth-child(2) div:nth-child(2) {
     background: none;
@@ -798,3 +810,18 @@ section {
   }
 }
 
+.p {
+  width: 600px;
+  height: 80vh;
+  border: 1px solid red;
+  position: static;
+  font-size: 0.75rem;
+}
+
+.d {
+  position: sticky;
+  width: 300px;
+  height: 45vh;
+  border: 1px solid blue;
+  bottom: 0;
+}
