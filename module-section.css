@@ -1,4 +1,18 @@
-.module-section {
+/* .module-section {
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.3) 60%
+    ),
+    url("./assets/module-section.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+} */
+
+.md-bg{
   width: 100%;
   background-image: linear-gradient(
       to bottom,
@@ -22,18 +36,18 @@
   color: #fff;
 }
 
-.module-reel h1 {
+.REEL-h1 {
   font-family: Arial, Helvetica, freesans, sans-serif;
   width: 120px;
   font-size: 50px;
 }
 
-.module-reel p {
+.REEL-p {
   font-size: 20px;
   font-family: Arial, Helvetica, freesans, sans-serif;
 }
 
-.module-reel a {
+.REEL-a{
   position: absolute;
   right: 0;
   top: 10%;
@@ -45,7 +59,7 @@
   justify-content: center;
 }
 
-.module-reel a button {
+.REEL-a button {
   height: 35px;
   font-size: 20px;
   font-family: Arial, Helvetica, freesans, sans-serif;
@@ -92,17 +106,17 @@
         margin: 20px auto;
       }
 
-    .module-reel a button {
+    .REEL-a button {
         font-weight: 100;
     }
 }
 
 @media only screen and (max-width: 960px) {
-    .module-reel h1 {
+    .REEL-h1 {
         font-size:45px;
     }
 
-    .module-reel p {
+    .REEL-p {
         font-size:18px;
     }
 

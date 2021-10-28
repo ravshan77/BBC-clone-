@@ -1,13 +1,34 @@
 .q {
-  background-color: red;
+  /* background-color: red; */
 }
 .s {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .bg-gray {
   background-color: #f6f6f6;
   padding: 20px 0;
+}
+
+.Editor-Picks{
+  color: #4a4a4a;
+    display: inline-block;
+    font-size: 24px;
+    font-family: Arial,Helvetica,freesans,sans-serif;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  position: relative;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  padding-left: 12px;
+}
+
+.Editor-Picks::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  left: 0px;
+  background-color: red;
 }
 
 .editor-block {
@@ -21,13 +42,22 @@
 
 .editor-item-right {
   width: 30%;
-  height: 100%;
+  margin-left: 15px;
 }
 
-.left-img-item div{
+.left-img-item div {
   width: 100%;
-  height: 100%;
   position: relative;
+}
+
+.left-img-item div:nth-child(1) {
+  height: 400px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0),
+      rgb(54, 53, 53)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/8B30/production/_121123653_gettyimages-1172702537.jpg");
 }
 
 .left-img-item img {
@@ -37,7 +67,7 @@
 
 .left-img-item article {
   position: absolute;
-  background-color: gray;
+  background: transparent;
   bottom: 0;
   width: 100%;
 }
@@ -68,32 +98,38 @@
 .item-card {
   margin-top: 15px;
   margin-bottom: 15px;
-  border: solid 1px blue;
-
+  background-color: white;
 }
-
 
 .item-card:nth-child(2) {
-  margin-right:  15px;
-  margin-left:  15px;
-  border: solid 1px blue;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-.pad{
+.pad {
   padding: 10px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
 }
 
+.latest-title {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #e91802;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+}
 
 @media only screen and (max-width: 1005px) {
-  
-/* .left-img-item div{
-  position: unset;
-} */
+  .latest-title {
+    font-size: 16px;
+  }
   .left-cards-item {
     flex-direction: row;
   }
 
-  .q{
+  .q {
     margin-right: 15px;
   }
 
@@ -108,37 +144,285 @@
   .item-card:nth-child(2) {
     margin: 0;
   }
+
+  .latest-item-pd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .latest-item-pd .latest-text {
+    font-size: 14px;
+    padding-left: 0;
+    padding-top: 15px;
+  }
 }
 
-
-.bld{
+.bld {
   display: block;
-  background-color:violet;
+  color: #fff;
 }
 
-.dbn{
+.dbn {
   display: none;
-  background-color:white;
+  background-color: white;
 }
+
+.bld-p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  color: #767676;
+}
+
+.bld-span {
+  color: #767676;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  padding-left: 12px;
+}
+
+.bld-h1 {
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  font-size: 36px;
+}
+
+.bld-span::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  left: 0px;
+  background-color: red;
+}
+
+
+.latest-item:nth-child(1) {
+  background-color: #505050;
+}
+
+.latest-item:nth-child(2) {
+  background-color: #302e2e;
+}
+
+.latest-item:nth-child(3) {
+  background-color: #505050;
+}
+
+.latest-item:nth-child(4) {
+  background-color: #302e2e;
+}
+
+.latest-item:nth-child(5) {
+  background-color: #505050;
+}
+
+.latest-item:nth-child(6) {
+  background-color: #302e2e;
+}
+
+.latest-item:nth-child(7) {
+  background-color: #505050;
+}
+
+
+
 
 @media only screen and (max-width: 1280px) {
-  .bld{
+  .bld {
     display: none;
   }
-  
-  .dbn{
+
+  .dbn {
     display: block;
   }
-  .left-img-item div{
-    position: static;
+  .left-img-item div {
+    position: relative;
+  }
+
+  .latest-text {
+    font-size: 16px;
+  }
+
+  .bld-p {
+    font-size: 16px;
+  }
+
+  .bld-span {
+    font-size: 16px;
+  }
+
+  .bld-h1 {
+    font-size: 26px;
   }
 }
-
-
 
 /* reclamalr */
 
-
-.editor-latest{
-  
+.latest-item {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
 }
+
+.latest-item-pd {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.latest-number {
+  width: 50px;
+  height: 45px;
+  background-color: #e91802;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Georgia", Times, serif;
+  font-style: italic;
+}
+
+.latest-text {
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  font-family: Arial, Helvetica, freesans, sans-serif;
+  align-items: center;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 867px) {
+  .latest-title {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-gray {
+    background-color: white;
+  }
+
+  .bld-span {
+    font-size: 12px;
+  }
+
+  .editor-block {
+    display: block;
+  }
+  .editor-item-left {
+    width: 100%;
+  }
+
+  .editor-item-right {
+    width: 100%;
+    margin-left: 0px;
+    border: solid 1px red;
+  }
+
+  .latest-item {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .latest-item-pd {
+    flex-direction: row;
+    color: #212121;  
+  }
+
+  
+  .latest-item-pd .latest-text{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+  }
+
+
+
+  .latest-item:nth-child(1) {
+    background-color: #f6f6f6;
+  }
+
+  .latest-item:nth-child(2) {
+    background-color: white;
+  }
+
+  .latest-item:nth-child(3) {
+    background-color: #f6f6f6;
+  }
+
+  .latest-item:nth-child(4) {
+    background-color: white;
+  }
+
+  .latest-item:nth-child(5) {
+    background-color: #f6f6f6;
+  }
+  
+  .latest-item:nth-child(6) {
+    background-color: white;
+  }
+
+  .latest-item:nth-child(7) {
+    background-color: #f6f6f6;
+  }
+
+
+
+  .pad {
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .pad p {
+    display: none;
+  }
+
+  .item-card article h1 {
+    font-size: 16px;
+  }
+
+  .item-card div img {
+    display: none;
+  }
+
+  .left-cards-item {
+    display: block;
+  }
+
+  .item-card {
+    width: 100%;
+  }
+  .bld-h1 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+  }
+
+  .left-img-item div:nth-child(1) article .bld-p {
+    display: none;
+  }
+
+  .bld {
+    display: block;
+    padding: 10px;
+  }
+  .dbn {
+    display: none;
+  }
+}
+
+
+
+

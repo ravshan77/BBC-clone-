@@ -1,0 +1,34 @@
+.film {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 16px 0;
+    position: relative;
+  }
+  
+
+.film-left-item {
+    width: 100%;
+    /* background-image: url("") */
+    /* position: absolute; */
+  }
+  
+  .film-right-item {
+    width: 100%;
+    margin-left: 15px;
+    /* position: absolute; */
+
+  }
+  
+  
+@media only screen and (max-width: 600px) {
+  
+    .film-right-item {
+      margin-left: 0;
+    }
+  
+    .film-right-item {
+      margin-top: 30px;
+    }
+  }

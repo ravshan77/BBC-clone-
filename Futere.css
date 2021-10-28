@@ -1,0 +1,75 @@
+.ft-bg{
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3) 60%
+      ),
+      url("./assets/futere-section.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  
+}
+
+.Future-h1{
+    color: white;
+    font-size: 22px;
+    border: 2px solid #2F8735;
+    padding: 4px 8px;
+    font-family: ReithSerif, Times, serif;
+    font-weight: bold;
+    width: 155px;
+    line-height: 30px;
+  }
+
+  .Future-p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+    margin-top: 10px;
+  }
+
+  .visit-a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 210px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .visit-a button {
+    height: 35px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+    width: 100%;
+    border-radius: 20px;
+    overflow: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+.Future-h1{
+ font-size:18px;   
+ width: 130px;
+}
+
+.Future-p{
+    font-size: 16px;
+}
+  .visit-a{
+    width: 60px;
+    height: 30px;
+  }
+  .visit-a button span, .visit-a button i{
+    display: none;
+  }
+}

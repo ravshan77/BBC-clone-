@@ -1,0 +1,75 @@
+.more-block {
+    display: flex;
+    justify-content: space-between;
+ }  
+
+
+.more-item-right {
+    width: 30%;
+}
+
+.more-item-left {
+    margin-left: 15px;
+    width: 70%;
+  } 
+
+
+  .more-icons{
+        width: 50px;
+        height: 45px;
+        background-color: #e91802;
+        /* border-radius: 50%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: "Georgia", Times, serif;
+        font-style: italic;
+  }
+
+  .more-icons img{
+      width: 100%;
+      border-radius: 50%;
+      height: 100%;
+  }
+
+
+  @media only screen and (max-width: 1005px) {  
+    .more-block {
+      flex-direction: row-reverse;
+    }
+
+    .more-item-left {
+        margin-left: 0px;
+      } 
+    
+    
+    
+    .more-item-right {
+        margin-left: 15px;
+      }
+  .more-icons{
+   display: none;   
+  }
+}
+
+
+  @media only screen and (max-width: 600px) {
+      
+   .more-block {
+    flex-direction: column-reverse;
+  }
+
+    .more-item-right {
+      width: 100%;
+      border: solid 1px red;
+      margin-left: 0;
+    }
+    .more-item-left {
+        margin-left: 0px;
+        width: 100%;
+      }
+  }  
+
+
